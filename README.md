@@ -1,6 +1,6 @@
 # FileFlow
 
-FileFlow a file conversion utility designed with security and speed in mind.
+FileFlow a file conversion utility designed with security and speed.
 
 ## Features
 
