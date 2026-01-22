@@ -16,7 +16,7 @@ FileFlow a file conversion utility designed with security and speed.
 - **Modern UI**: Professional SaaS-style interface with real-time conversion progress.
 - **Automated Testing**: Built-in integration test suite for verifying all conversion paths.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Backend
 - **Java 21**
