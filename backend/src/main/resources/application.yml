@@ -1,0 +1,59 @@
+server:
+  port: 8080
+  max-http-request-header-size: 16KB
+
+spring:
+  application:
+    name: file-converter
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 500MB
+      max-request-size: 500MB
+  codec:
+    max-in-memory-size: 10MB
+
+# Application Configuration
+app:
+  storage:
+    temp-dir: ${java.io.tmpdir}/file-converter
+    max-file-size: 524288000  # 500MB in bytes
+    ttl-minutes: 10
+  
+  security:
+    token-secret: ${TOKEN_SECRET:your-256-bit-secret-key-for-signing-tokens-change-in-production}
+    token-ttl-minutes: 30
+    rate-limit:
+      requests-per-minute: 30
+      burst-capacity: 10
+  
+  worker:
+    pool-size: 4
+    queue-capacity: 100
+    process-timeout-seconds: 300
+  
+  converters:
+    ffmpeg:
+      enabled: true
+      path: ffmpeg
+    imagemagick:
+      enabled: true
+      path: convert
+    libreoffice:
+      enabled: true
+      path: soffice
+    pandoc:
+      enabled: true
+      path: pandoc
+
+# CORS Configuration
+cors:
+  allowed-origins: http://localhost:5173,http://localhost:3000
+  allowed-methods: GET,POST,DELETE,OPTIONS
+  allowed-headers: "*"
+  max-age: 3600
+
+logging:
+  level:
+    com.fileconverter: DEBUG
+    org.springframework.web: INFO

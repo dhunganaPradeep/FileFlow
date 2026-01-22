@@ -1,0 +1,44 @@
+# Common
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+.env
+.env.local
+
+# Node.js / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.eslintcache
+
+# Java / Maven / Backend
+backend/target/
+backend/*.jar
+backend/*.war
+backend/*.ear
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/test-data/
+backend/sample.*
+backend/dummy.*
+backend/png-to-pdf-test.png
+backend/debug-lo/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+.classpath
+.project
+.settings/
+bin/
+*.iml
+
+# Temp storage for the app
+tmp/
+/tmp/file-converter/

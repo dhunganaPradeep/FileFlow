@@ -1,0 +1,68 @@
+.conversion-status {
+    width: 100%;
+}
+
+.status-card {
+    background-color: var(--color-bg-tertiary);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.status-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.status-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.status-info {
+    flex: 1;
+}
+
+.status-title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.status-subtitle {
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+}
+
+.status-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.status-actions .btn {
+    flex: 1;
+}
+
+.error-message {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #fff1f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    color: #991b1b;
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+
+.status-spinner {
+    color: var(--color-primary);
+    animation: spin 1s linear infinite;
+}
